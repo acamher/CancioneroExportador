@@ -5,11 +5,13 @@ import java.io.*;
 public class Ejecutor {
 
     public static void main(String[] args) {
-        leerfichero("D:\\acamh\\Documents\\Cancionero\\canciones.csv");
+        leerFichero("D:\\acamh\\Documents\\Cancionero\\canciones.csv");
+
+
 
     }
 
-    private static void leerfichero(String path){
+    private static void leerFichero(String path){
         File archivo = null;
         FileReader fr = null;
         BufferedReader br = null;
@@ -24,7 +26,7 @@ public class Ejecutor {
             // Lectura del fichero
             String linea;
             while ((linea = br.readLine()) != null)
-                System.out.println(linea);
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
